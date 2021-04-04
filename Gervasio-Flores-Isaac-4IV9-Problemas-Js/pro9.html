@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="./css/estilo_problemas.css">
+              <title>Document</title>
+</head>
+<body>
+<div class="nota">Calculadora de Monto a cobrar de horas de trabajo por Salario Minimo en la CDMX  </div>
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="texto_label" >Introduce las horas totales de trabajo</td>
+                                          <td class="text_entrada" ><input type="text" name="horas" onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="texto_label" >Monto a cobrar:</td>
+                                          <td class="text_entrada" ><input type="text" name="cobro" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+							
+							
+							<!--BOTONES--> 
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                         value="Calcular" 
+														 onclick="salario()">
+                                          </td>
+                                          <td class="text_entrada" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+			  </form>
+			  <script src="./js/validacion_pro9.js"></script>
+</body>
+</html>

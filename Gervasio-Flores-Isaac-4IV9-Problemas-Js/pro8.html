@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="./css/estilo_problemas.css">
+              <title>Document</title>
+</head>
+<body>
+<div class="nota">Escriba un numero y se indicara donde esta el Mayor</div>
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="texto_label" >Introduce el primer numero</td>
+                                          <td class="text_entrada" ><input type="text" name="num1" onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="texto_label" >Introduce el segundo numero</td>
+                                          <td class="text_entrada" ><input type="text" name="num2" onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            
+                            <tr>
+                                          <td class="texto_label" >Introduce el tercer numero</td>
+                                          <td class="text_entrada" ><input type="text" name="num3" onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="texto_label" > Numero mayor:</td>
+                                          <td class="text_entrada" ><input type="text" name="resultado" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+							
+							<!--BOTONES--> 
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                        value="Calcular" 
+														onclick="calcular()">
+                                          </td>
+                                          <td class="text_entrada" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+</form>
+<script src="./js/validacion_pro8.js"></script>
+
+</body>
+</html>

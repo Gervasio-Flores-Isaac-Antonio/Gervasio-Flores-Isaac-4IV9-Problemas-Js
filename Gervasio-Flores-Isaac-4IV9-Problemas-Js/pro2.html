@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="./css/estilo_problemas.css">
+              <title>Document</title>
+              
+</head>
+<body>
+              
+
+              <form method="get" 
+                            name="formulario" action="problema01.html">
+                            <table align="center" border="1" >
+                                          <tr>
+                                                        <td class="texto_label" >Ingrese el valor de la primera venta</td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="text" name="venta1" onkeypress="validar(event)"></td>
+                                                        
+                                                        
+
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="texto_label" >Ingrese el valor de la segunda venta</td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="text" name="venta2" onkeypress="validar(event)">
+                                                        </td>
+
+                                          </tr>
+                                          
+                                          <tr>
+                                                        <td class="texto_label" >Ingrese el valor de la tercera venta</td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="text" name="venta3" onkeypress="validar(event)">
+                                                        </td>
+
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="texto_label" >Monto por concepto de comision: </td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="text" name="comision" readonly="readonly" class="input_text">
+                                                        </td>
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="texto_label" >Monto total del mes: </td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="text" name="total"  readonly="readonly" class="input_text">
+                                                        </td>
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="boton">
+                                                                      <input id="cal" type="button" name="enviar" value="Calcular" onclick="calcular()">
+                                                        
+                                                        </td>
+                                                        <td class="text_entrada" >
+                                                                      <input type="button" id="borra" name="borrard" value="Borrar" onclick="borrar()">
+                                                        </td>
+                                          </tr>
+                            </table>
+              </form>
+
+              
+
+              <script  src="./js/validacion_pro2.js"></script>
+</body>
+</html>

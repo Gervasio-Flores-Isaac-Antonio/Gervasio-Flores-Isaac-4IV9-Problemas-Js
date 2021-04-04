@@ -1,0 +1,105 @@
+
+*{
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body, html{
+
+              background: url(../imagenes/fondo.jpg) no-repeat center center fixed;
+              background-size: cover;
+			 -moz-background-size: cover;
+			 -webkit-background-size: cover;
+			 
+}
+
+
+
+
+
+
+
+
+
+.contenedor{
+              display: flex;
+              justify-content: center;
+              
+              flex-wrap: wrap;
+              margin-top: 2rem;
+              
+}
+
+
+
+.opcion{
+              
+              height: 4rem;
+              width: 100%;
+              margin-top: 1rem;
+
+              background-color: rgba(0, 0, 0, 0);
+              color: white;
+              
+
+}
+
+.menu{
+              border: 0px solid white;
+              width: 150rem;
+
+              margin-left: 3rem;
+              margin-right: 3rem;
+
+              display: flexs;
+}
+
+.barra{
+              width: 100%;
+              background-color: rgb(35, 25, 79);
+              display: flex;
+              justify-content: center;
+              color: white;
+              
+}
+
+p{
+              display: flex;
+              justify-content: center;
+              color: white;
+              margin-top: 4rem;
+              
+}
+
+footer{
+              margin-top: 3rem;
+              bottom: 0px;
+              position: absolute;
+}
+
+/*
+.opcion:hover{
+              
+              z-index: 2;
+              -webkit-transition: all 200ms ease-in;
+              -webkit-transform: scale(1.009);
+              -ms-transition: all 200ms ease-in;
+              -ms-transform: scale(1.4);
+              -moz-transition: all 200ms ease-in;
+              -moz-transform: scale(1.5);
+              color:rgb(91, 11, 118)
+}
+*/
+
+a{
+              text-decoration: none;
+              color: white;
+              width: 250px;
+              height: 250px;
+}
+
+.opcion:hover{
+              background-color: rgb(255, 109, 0);
+              border: 2px solid red;
+              color: rgb(49, 3, 92);
+}
